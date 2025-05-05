@@ -10,7 +10,7 @@ echo "[+] Enabling and starting services..."
 sudo systemctl enable apache2 ssh mysql
 sudo systemctl start apache2 ssh mysql
 
-echo "[+] Creating weak user 'sydney' with password '12345'..."
+echo "[+] Creating weak user 'sydney1' with password '12345'..."
 sudo useradd -m sydney
 echo "sydney:12345" | sudo chpasswd
 sudo usermod -aG sudo sydney
